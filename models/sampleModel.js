@@ -6,23 +6,23 @@ const sampleModel = new Schema({
     name: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
     },
-    description:{
-        type: String
+    description: {
+        type: String,
     },
     github: {
-        type: String
+        type: String,
     },
     website: {
-        type: String
+        type: String,
     },
     docs: {
-        type: String
+        type: String,
     },
     other: {
-        type: Array
-    }
+        type: Array,
+    },
 });
 
-module.exports = mongoose.model('sampleModel',sampleModel);
+module.exports = mongoose.model('sampleModel', sampleModel);
